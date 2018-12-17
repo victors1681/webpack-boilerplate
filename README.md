@@ -5,6 +5,8 @@ I created this repo extended from [Starting new (React+Webpack) project from scr
 
 > Webpack 4 boilerplate with Babel, SASS, eslint, DevServer, HMR, Jest, Prettier and Performances and Optimization Techniques.
  
+ ![webpack](https://cdn-images-1.medium.com/max/2000/1*y2PxPRAMevq1yY_j9gQBVg.jpeg)
+ 
 ## Requirements 
  [nodejs](https://nodejs.org/en/)
  
