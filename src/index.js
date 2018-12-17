@@ -1,12 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ViewSelector from "./View/ViewSelector";
+import App from "./app";
 
-ReactDOM.render(<ViewSelector />, document.getElementById("mainApp"));
-
-
-// if (module.hot) {
-//     module.hot.accept("./View/ViewSelector", function() {
-//         ReactDOM.render(<ViewSelector />, document.getElementById("mainApp"));
-//  });
-// }
+ReactDOM.render(<App />, document.getElementById("mainApp"));
