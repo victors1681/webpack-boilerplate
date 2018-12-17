@@ -44,11 +44,8 @@ const getHMR = env => {
 };
 
 const getCleanWebpackPlugin = env => {
-  if (isDev(env)) {
-    return new CleanWebpackPlugin([
-      "myDistribution/ui/js",
-      "myDistribution/ui/css"
-    ]);
+  if (isProd(env)) {
+    return new CleanWebpackPlugin(["dist/ui/js", "dist/ui/css"]);
   }
 };
 
