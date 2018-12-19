@@ -13,7 +13,7 @@ I created this repo extended from [Starting new (React+Webpack) project from scr
 ## Download
 Copy this project without git from terminal.
 ```
-curl -L -o master.zip https://github.com/victors1681/webpack-boilerplate/archive/master.zip && unzip master.zip && rm master.zip && mv ./webpack-boilerplate-master/{.,}* ./ && rm -r ./webpack-boilerplate-master
+curl -L -o master.zip https://github.com/victors1681/webpack-boilerplate/archive/master.zip && unzip master.zip && rm master.zip
 
 ```
 
