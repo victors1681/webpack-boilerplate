@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
   }
 }
