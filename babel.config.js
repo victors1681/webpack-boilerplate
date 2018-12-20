@@ -23,6 +23,7 @@ module.exports = api => ({
     "react-hot-loader/babel",
     "@babel/plugin-transform-modules-commonjs",
     "@babel/plugin-proposal-export-namespace-from",
-    "@babel/plugin-proposal-throw-expressions"
+    "@babel/plugin-proposal-throw-expressions",
+    "@babel/plugin-transform-spread"
   ]
 });
