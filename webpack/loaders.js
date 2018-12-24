@@ -4,7 +4,7 @@ const { isDev } = require("./utils");
 const getBabelLoader = () => ({
   test: /\.(js)$/,
   exclude: /node_modules/,
-  use: ["cache-loader", "babel-loader?cacheDirectory", "thread-loader"]
+  use: ["babel-loader", "thread-loader"]
 });
 
 const getCssLoader = env => ({

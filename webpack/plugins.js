@@ -55,8 +55,8 @@ const getPlugins = env =>
   [
     getHtmlWebpackPlugin(env),
     getBundleAnalyzerPlugin(env),
-    getMiniCssExtractPlugin(env),
-    getHMR(env),
+    //getMiniCssExtractPlugin(env), //Incompatible.
+    getHMR(env), //DeprecationWarning [hash]
     getCleanWebpackPlugin(env)
   ].filter(plugin => plugin);
 

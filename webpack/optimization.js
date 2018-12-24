@@ -34,7 +34,6 @@ getChunks = () => ({
     cacheGroups: {
       vendors: {
         test: /[\\/]node_modules[\\/]/,
-        name: "vendors",
         chunks: "all"
       },
       styles: {
@@ -49,7 +48,8 @@ getChunks = () => ({
 
 getOptimization = () => ({
   ...getChunks(),
-  minimizer: [getTerserPlugin(), getOptimizationAssetsPlugin()]
+  minimizer: [getTerserPlugin(), getOptimizationAssetsPlugin()],
+  runtimeChunk: true
 });
 
 module.exports.getOptimization = getOptimization;
