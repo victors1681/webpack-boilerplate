@@ -5,7 +5,7 @@ const { getDevServer } = require("./webpack/devServer");
 const { getPlugins } = require("./webpack/plugins");
 const { getLoaders } = require("./webpack/loaders");
 const { getOptimization } = require("./webpack/optimization");
-const { isDev } = require("./webpack/utils");
+const { isDev, isProd } = require("./webpack/utils");
 
 module.exports = env => {
   const config = {

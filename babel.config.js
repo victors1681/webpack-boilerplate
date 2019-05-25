@@ -9,7 +9,8 @@ module.exports = api => ({
         forceAllTransforms: api.env("production"),
         targets: {
           browsers: ["last 2 versions"]
-        }
+        },
+        corejs: "3"
       }
     ],
     "@babel/preset-react"
@@ -24,6 +25,10 @@ module.exports = api => ({
     "@babel/plugin-transform-modules-commonjs",
     "@babel/plugin-proposal-export-namespace-from",
     "@babel/plugin-proposal-throw-expressions",
-    "@babel/plugin-transform-spread"
+    "@babel/plugin-transform-spread",
+    "@babel/transform-runtime",
+    {
+      corejs: 3
+    }
   ]
 });
