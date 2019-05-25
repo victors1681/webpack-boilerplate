@@ -51,13 +51,27 @@ const getCleanWebpackPlugin = env => {
   }
 };
 
+const getSourceMap = env => {
+  if (isDev(env)) {
+    return new webpack.SourceMapDevToolPlugin({
+      test: [/\.js$/],
+      exclude: "vendor",
+      filename: "[hash].js.map",
+      append: "//# sourceMappingURL=[url]",
+      moduleFilenameTemplate: "[resource-path]",
+      fallbackModuleFilenameTemplate: "[resource-path]"
+    });
+  }
+};
+
 const getPlugins = env =>
   [
     getHtmlWebpackPlugin(env),
     getBundleAnalyzerPlugin(env),
     getMiniCssExtractPlugin(env),
     getHMR(env),
-    getCleanWebpackPlugin(env)
+    getCleanWebpackPlugin(env),
+    getSourceMap(env)
   ].filter(plugin => plugin);
 
 module.exports.getPlugins = getPlugins;

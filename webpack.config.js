@@ -20,5 +20,16 @@ module.exports = env => {
     },
     optimization: getOptimization()
   };
+  if (isDev(env)) {
+    config.performance = {
+      hints: false
+    };
+    config.devServer = getDevServer();
+    config.devtool = false;
+  }
+
+  if (isProd(env)) {
+    config.bail = true;
+  }
   return config;
 };
