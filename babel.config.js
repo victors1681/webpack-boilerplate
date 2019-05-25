@@ -10,7 +10,7 @@ module.exports = api => ({
         targets: {
           browsers: ["last 2 versions"]
         },
-        corejs: "3"
+        corejs: "2"
       }
     ],
     "@babel/preset-react"
@@ -26,9 +26,6 @@ module.exports = api => ({
     "@babel/plugin-proposal-export-namespace-from",
     "@babel/plugin-proposal-throw-expressions",
     "@babel/plugin-transform-spread",
-    "@babel/transform-runtime",
-    {
-      corejs: 3
-    }
+    "@babel/transform-runtime"
   ]
 });
